@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <script src="assets/js/user.js" defer></script>
+    <!-- <button onclick="window.location.href = 'admin.html'">Sonraki Sayfa</button> -->
+
+</head>
+<body>
+
+
+  <header>
+    <div class="sideMenu">
+        <div class="board">
+          <a href="#"><img src="assets/imgg/user logo.svg" alt=""></a>
+          <div class="card">
+            <a href="#" class="horizontal"><img src="assets/imgg/blue hori.svg" alt=""></a>
+            <a href="#"><img src="assets/imgg/mail.svg" alt=""></a>
+            <a href="#"><img src="assets/imgg/ring.svg" alt=""></a>
+            <a href="#"><img src="assets/imgg/takvim.svg" alt=""></a>
+          </div>
+          <div class="card">
+            <a href="#"><img src="assets/imgg/istatic.svg" alt=""></a>
+            <a href="#"><img src="assets/imgg/wallet.svg" alt=""></a>
+            <a href="#"><img src="assets/imgg/setting.svg" alt=""></a>
+          </div>
+          <div class="avatar">
+            <a href="#"><img src="assets/imgg/Avatar.png" alt=""></a>
+          </div>
+        </div>
+    </div>
+</header>
+   
+
+<div class="frame">
+  <div class="bread">
+      <a href="#" class="pic"><img src="assets/imgg/search.svg" alt=""></a>
+      <a href="#" class="pic"><img src="assets/imgg/filter.svg" alt=""></a>
+      <div class="brian">
+        <a href="#"><img src="assets/imgg/Avatar.png" alt=""></a>
+        <div class="order">
+          <h5>Cristopher Calzoni</h5>
+          <p>UI/UX</p>
+        </div>
+      </div>
+  </div>
+
+
+</div>
+
+<div class="photo">
+
+  <div class="blockHeader">
+    <h1>Our Beloved Team Members!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper vestibulum ac urna pharetra ligula.</p>
+  </div>
+
+  <div class="filter">
+    
+    <div class="box">
+      <div class="search">
+        <img src="assets/imgg/search2.svg" alt="Arama Resmi" class="searchIcon">
+        <input type="text" id="searchInput" placeholder="Kullanıcı adını girin">
+      </div>
+    </div>
+
+    <div class="toDo">
+      <label for="category"></label>
+      <select id="category" onchange="filterUser()">
+        <option value="">All</option>
+        <option value="completed">Continuing</option>
+        <option value="continuing">Completed</option>
+      </select>
+
+      <a href="#" class="btn" onclick="applyFilter()">Apply</a>
+    </div>
+
+  </div>
+
+  <div class="addUser">
+    <h2>Add New User</h2>
+    <form id="newUserForm">
+      <input type="text" id="newUserNameInput" placeholder="User name" required>
+      <input type="number" id="newUserIdInput" placeholder="User ID" required>
+      <input type="number" id="newTaskCountInput" placeholder="Number of Jobs" required>
+      <button type="submit" id="ctaBtn">Add</button>
+      <div id="tasksInputs"></div>
+    </form>
+
+  </div>
+
+
+
+  <div class="user">
+    <form id="newUserForm"></form>
+    <ul id="userList"></ul>
+ 
+     
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- *************************************************************** -->
+   
+   
+    <!-- <h2>Yeni Kullanıcı Ekle</h2>
+    <form id="newUserForm">
+        <input type="text" id="newUserNameInput" placeholder="Kullanıcı Adı" required>
+        <input type="number" id="newUserIdInput" placeholder="Kullanıcı ID" required>
+        <input type="number" id="newTaskCountInput" placeholder="Yapılacak İş Sayısı" required>
+        <div id="tasksInputs">
+        </div>
+        <button type="submit">Ekle</button>
+      </form>
+
+       -->
+
+
+      
+
+
+
+
+
+
+
+
+</body>
+</html>

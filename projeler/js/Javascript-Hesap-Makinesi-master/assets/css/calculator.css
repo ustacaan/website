@@ -1,0 +1,124 @@
+.calculator {
+  width: 335px;
+  height: 460px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  width: 305px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+input[type="button"] {
+  width: 70px;
+  height: 40px;
+  margin: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+  background-color: #ddd;
+}
+
+input[value="+"],
+input[value="-"],
+input[value="*"],
+input[value="/"] {
+    background-color: #ffcc00;
+}
+
+input[value="+"]:hover,
+input[value="-"]:hover,
+input[value="*"]:hover,
+input[value="/"]:hover {
+    background-color: #66ff00;
+}
+
+input[value="="] {
+    display: inline-block;
+    border: 1px solid #3079ED;
+    border-radius: 1px;
+    width: 19.5%;
+    text-align: center;
+    padding: 95px 10px;
+    margin: -195px 10px 10px 0;
+    border-radius: 5px;
+    vertical-align: top;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #4d90fe;
+    transition: all .2s ease-in-out;
+    float: right;
+}
+
+input[value="="]:hover {
+    background-color: #ffffff;
+    color: #3079ED;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+
+.calculator {
+  width: 469px; /* 335px * 1.4 */
+  margin: 70px auto; /* 50px * 1.4 */
+  padding: 28px; /* 20px * 1.4 */
+  border: 1px solid #ccc;
+  border-radius: 7px; /* 5px * 1.4 */
+  background-color: #f8f8f8;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.1); /* 10px * 1.4 */
+}
+
+#result {
+  width: 440px; /* 305px * 1.4 */
+  margin-bottom: 14px; /* 10px * 1.4 */
+  padding: 14px; /* 10px * 1.4 */
+  font-size: 25.2px; /* 18px * 1.4 */
+}
+
+input[type="button"] {
+  width: 90px; /* 70px * 1.4 */
+  height: 56px; /* 40px * 1.4 */
+  margin: 12px; /* 5px * 1.4 */
+  font-size: 22.4px; /* 16px * 1.4 */
+  border: 1px solid #ccc;
+  border-radius: 7px; /* 5px * 1.4 */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  justify-content: space-between;
+
+}
+
+.plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+input[value="="] {
+  width: 90px; /* 19.5% * 1.4 */
+  padding: 147px 14px; /* 95px * 1.4, 10px * 1.4 */
+  margin: -273px 14px 14px 0; /* -195px * 1.4, 10px * 1.4 */
+  border-radius: 7px; /* 5px * 1.4 */
+  float: right;
+  margin-right: 12px;
+}
+
+.text {
+  margin-top: -35px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link rel="icon" href="assets/img/calculator0.png" type="calculator">
+    <link rel="stylesheet" href="assets/css/calculator.css">
+    <script src="assets/js/calculator.js" defer></script>
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" id="result" readonly />
+        <div class="plus">
+
+            <input type="button" value="+" onclick="addToResult('+')" />
+            <input type="button" value="-" onclick="addToResult('-')" />
+            <input type="button" value="*" onclick="addToResult('*')" />
+            <input type="button" value="/" onclick="addToResult('/')" />
+        </div>
+
+        <div class="number">
+            <input type="button" value="1" onclick="addToResult('1')" />
+            <input type="button" value="2" onclick="addToResult('2')" />
+            <input type="button" value="3" onclick="addToResult('3')" />
+            <br>
+            <input type="button" value="4" onclick="addToResult('4')" />
+            <input type="button" value="5" onclick="addToResult('5')" />
+            <input type="button" value="6" onclick="addToResult('6')" />
+            <br>
+            <input type="button" value="7" onclick="addToResult('7')" />
+            <input type="button" value="8" onclick="addToResult('8')" />
+            <input type="button" value="9" onclick="addToResult('9')" />
+            <br>
+            <input type="button" value="0" onclick="addToResult('0')" />
+            <input type="button" value="." onclick="addToResult('.')" />
+            <input type="button" value="C" onclick="clearResult()" />
+        </div>
+        
+        <div class="text">
+            <input type="button" value="=" onclick="calculateResult()" />
+        </div>
+    </div>
+    
+
+</body>
+</html>

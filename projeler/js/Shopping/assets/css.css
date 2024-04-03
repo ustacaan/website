@@ -1,0 +1,20 @@
+/* CSS ile düğme stilini belirleme */
+button {
+    margin-right: 10px;
+    background-color: #3498db; /* Arkaplan rengi */
+    color: #ffffff; /* Metin rengi */
+    padding: 10px 20px; /* Dolgu (padding) */
+    border: none; /* Sınır (border) yok */
+    border-radius: 5px; /* Köşe yuvarlama (border radius) */
+    cursor: pointer; /* İşaretçi tarzı (fare üzerine geldiğinde el işareti) */
+  }
+  
+  /* Düğme üzerine gelindiğinde stil değişikliği yapma */
+  button:hover {
+    background-color: #1e87d8; /* Arkaplan rengi değiştirme */
+  }
+
+  .button :last-child {
+    background-color: brown;
+  }
+  

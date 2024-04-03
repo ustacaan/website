@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İş Takip Sistemi</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/figma.css">
+    <script src="assets/js/figma.js" defer></script>
+    <script src="assets/js/user.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="sideMenu">
+            <a href="#"><img src="assets/imgg/Company Logo (2).svg" alt=""></a>
+            
+            <div class="board">
+                <div class="card">
+                    <a href="#"><img src="assets/imgg/horizontal.svg" alt=""></a>
+                    <h5>Dashboard</h5>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="assets/imgg/circle.svg" alt=""></a>
+                    <h5>Audience</h5>
+                    <a href="#"><img src="assets/imgg/down.svg" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="assets/imgg/5.svg" alt=""></a>
+                    <h5>Posts</h5>
+                    <h6>11</h6>
+                </div>
+                <div class="card">
+                     <a href="#"><img src="assets/imgg/check.svg" alt=""></a>
+                    <h5>Schedule</h5>
+                    <h4>3</h4>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="assets/imgg/3.svg" alt=""></a>
+                    <h5 style="color: #437EF7;">Income</h5>
+                    <a href="#" id="toggle-list"><img src="assets/imgg/down-blue.svg" alt=""></a>
+                </div>
+                <div id="list-container">
+                    <ul class="list">
+                        <li>Earnings</li>
+                        <li>Refunds</li>
+                        <li>Declines</li>
+                        <li>Payouts</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="assets/imgg/star.svg" alt=""></a>
+                    <h5>Promote</h5>
+                    <a href="#"><img src="assets/imgg/down.svg" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="users.html"><img src="assets/imgg/star.svg" alt=""></a>
+                    <a href="users.html">Users</a>
+                    <a href="users.html"><img src="assets/imgg/down.svg" alt=""></a>
+                </div>
+            </div>
+        
+            <div class="widget">
+                <div class="wid">
+                    <a href="#"><img src="assets/imgg/plus.svg" alt=""></a>
+                    <h3>Add New Task</h3>
+                </div>
+                <div class="widNaw">
+                    <h4>Projects</h4>
+                    <div class="letter">
+                        <h6>L</h6>
+                        <h2>Update Text Styles</h2>
+                    </div>
+                    <div class="loadingBar">
+                        <h5>25%</h5>
+                        <div class="blue"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="frame">
+        <div class="bread">
+            <h5>Kanban</h5>
+            <a href="#"><img src="assets/imgg/right arrow.svg" alt=""></a>
+            <h5>Design System</h5>
+            <a href="#"><img src="assets/imgg/right arrow.svg" alt=""></a>
+            <h5>Updates</h5>
+        </div>
+
+        <div class="brian">
+            <h2>Hey there, Brian Ford!</h2>
+            <p>Welcome back, we're happy to have you here!</p>
+        </div>
+
+        <div class="tab">
+            <h3>My task</h3>
+            <h3>Profile</h3>
+            <h3>Stats</h3>
+            <h3>Inbox</h3>
+            <h3>Team</h3>
+            <h3>Notifications</h3>
+            <h4>3</h4>
+            <h3>Settings</h3>
+        </div>
+
+        <div class="order">
+            <div class="row">
+                <h3>All</h3>
+                <h3>Saved</h3>
+                <h3>Recent</h3>
+                <a href="#"><img src="assets/imgg/plus2.svg" alt=""></a>    
+            </div>
+            <div class="btn">
+                <a href="#"><img src="assets/imgg/settings 1.svg" alt="">Add filter</a>
+                <a href="#" id="openModal"><img src="assets/imgg/plus 16.svg" alt="">New Board</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="photo">
+
+        <div class="box">
+            <h2>To Do</h2>
+
+            <div class="toDo">
+                    <div class="toDoHeader">
+                        <h3>Lookscout</h3>
+                        <a href="#" id="menu-trigger"><img src="assets/imgg/dot menu.svg" alt=""></a>
+
+                        <div id="menu-options" style="display: none;">
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><a href="#" id="delete">Delete</a></li>
+                                <li><a href="#" id="moveProgress">Move to in Progress</a></li>
+                                <li><a href="#" id="moveDone">Move to in Done</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Cursus purus, diam, aliquet <span class="subtext"></span> scelerisque dignissim tellus<span class="subtext"></span> aenean viverra. In risus elit vel id<span class="subtext"></span> tincidunt vel. Nunc ac ipsum.</p>
+
+                    <div class="group">
+                        <div class="avatar">
+                            <a href="#"><img src="assets/imgg/Avatar.png" alt=""></a>
+                            <a href="#"><img src="assets/imgg/Avatar (1).png" alt=""></a>
+                            <p>+7</p>
+                        </div>  
+
+                        <div class="label">
+                            <a href="#"><img id="myTime" src="assets/imgg/Lead Icon.svg" alt=""></a>
+                            <h5 id="saat"></h5>
+                        </div>
+                    </div>
+
+            </div>
+
+            <div class="toDo">
+                <div class="toDoHeader">
+                    <h3>Lookscout</h3>
+                    <a href="#" id="menu-trigger"><img src="assets/imgg/dot menu.svg" alt=""></a>
+
+                        <div id="menu-options" style="display: none;">
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><a href="#" id="delete">Delete</a></li>
+                                <li><a href="#" id="moveProgress">Move to in Progress</a></li>
+                                <li><a href="#" id="moveDone">Move to in Done</a></li>
+                        </div>
+                </div>
+                <a href="#" class="pic"><img src="assets/imgg/img.png" alt=""></a>
+                <p>Cursus purus, diam, aliquet <span class="subtext"></span> scelerisque dignis.</p>
+
+                <div class="group">
+                    <div class="avatar">
+                        <a href="#"><img src="assets/imgg/Avatar.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (1).png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (2).png" alt=""></a>
+                        <p>+7</p>
+                    </div>  
+
+                    <div class="label">
+                         <a href="#"><img id="myTime" src="assets/imgg/Lead Icon.svg" alt=""></a>
+                        <h5 id="saat"></h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="toDo">
+                <div class="toDoHeader">
+                    <h3>Lookscout</h3>
+                    <a href="#" id="menu-trigger"><img src="assets/imgg/dot menu.svg" alt=""></a>
+
+                        <div id="menu-options" style="display: none;">
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><a href="#" id="delete">Delete</a></li>
+                                <li><a href="#" id="moveProgress">Move to in Progress</a></li>
+                                <li><a href="#" id="moveDone">Move to in Done</a></li>
+                        </div>
+                </div>
+                <p>Cursus purus, diam, aliquet <span class="subtext"></span> scelerisque dignissim tellus<span class="subtext"></span> aenean viverra. In risus elit vel id<span class="subtext"></span> tincidunt vel. Nunc ac ipsum.</p>
+
+                <div class="group">
+                    <div class="avatar">
+                        <a href="#"><img src="assets/imgg/Avatar.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (1).png" alt=""></a>
+                        <p>+7</p>
+                    </div>  
+
+                    <div class="label">
+                        <a href="#"><img id="myTime" src="assets/imgg/Lead Icon.svg" alt=""></a>
+                        <h5 id="saat"></h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="plus">
+                <a href="#"><img src="assets/imgg/plus 2.svg" alt="">Add</a>
+            </div>
+        </div>
+
+
+        <div class="progres">
+            <h2>In Progress</h2>
+
+            <div class="toDo">
+                <div class="toDoHeader">
+                    <h3>Lookscout</h3>
+                    <a href="#" id="menu-trigger"><img src="assets/imgg/dot menu.svg" alt=""></a>
+
+                        <div id="menu-options" style="display: none;">
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><a href="#" id="delete">Delete</a></li>
+                                <li><a href="#" id="moveBox">Move to in To Do</a></li>
+                                <li><a href="#" id="moveDone">Move to in Done</a></li>
+                        </div>
+                </div>
+                <a href="#" class="pic"><img src="assets/imgg/img2.png" alt=""></a>
+                <p>Cursus purus, diam, aliquet <span class="subtext"></span> scelerisque dignis.</p>
+
+                <div class="group">
+                    <div class="avatar">
+                        <a href="#"><img src="assets/imgg/Avatar.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (1).png" alt=""></a>
+                        <p>+7</p>
+                    </div>  
+
+                    <div class="label">
+                         <a href="#"><img id="myTime" src="assets/imgg/Lead Icon.svg" alt=""></a>
+                        <h5 id="saat"></h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="toDo">
+                <div class="toDoHeader">
+                    <h3>Lookscout</h3>
+                    <a href="#" id="menu-trigger"><img src="assets/imgg/dot menu.svg" alt=""></a>
+
+                        <div id="menu-options" style="display: none;">
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><a href="#" id="delete">Delete</a></li>
+                                <li><a href="#" id="moveBox">Move to in To Do</a></li>
+                                <li><a href="#" id="moveDone">Move to in Done</a></li>
+                        </div>
+                </div>
+                <p>Cursus purus, diam, aliquet <span class="subtext"></span> scelerisque dignissim tellus<span class="subtext"></span> aenean viverra. In risus elit vel id<span class="subtext"></span> tincidunt vel. Nunc ac ipsum.</p>
+
+                <div class="group">
+                    <div class="avatar">
+                        <a href="#"><img src="assets/imgg/Avatar.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (1).png" alt=""></a>
+                        <p>+7</p>
+                    </div>  
+
+                    <div class="label">
+                         <a href="#"><img id="myTime" src="assets/imgg/Lead Icon.svg" alt=""></a>
+                        <h5 id="saat"></h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="plus">
+                <a href="#"><img src="assets/imgg/plus 2.svg" alt="">Add</a>
+            </div>
+        </div>
+
+
+        <div class="done">
+            <h2>Done</h2>
+
+            <div class="toDo">
+                <div class="toDoHeader">
+                    <h3>Lookscout</h3>
+                    <a href="#" id="menu-trigger"><img src="assets/imgg/dot menu.svg" alt=""></a>
+
+                        <div id="menu-options" style="display: none;">
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><a href="#" id="delete">Delete</a></li>
+                                <li><a href="#" id="moveBox">Move to in To Do</a></li>
+                                <li><a href="#" id="moveProgress">Move to in Progress</a></li>
+                        </div>
+                </div>
+                <p>Cursus purus, diam, aliquet <span class="subtext"></span> scelerisque dignissim tellus<span class="subtext"></span> aenean viverra. In risus elit vel id<span class="subtext"></span> tincidunt vel. Nunc ac ipsum.</p>
+
+                <div class="group">
+                    <div class="avatar">
+                        <a href="#"><img src="assets/imgg/avatar 3.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (2).png" alt=""></a>
+                        <p>+7</p>
+                    </div>  
+
+                    <div class="label">
+                        <a href="#"><img src="assets/imgg/tik.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="toDo">
+                <div class="toDoHeader">
+                    <h3>Lookscout</h3>
+                    <a href="#" id="menu-trigger"><img src="assets/imgg/dot menu.svg" alt=""></a>
+
+                        <div id="menu-options" style="display: none;">
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><a href="#" id="delete">Delete</a></li>
+                                <li><a href="#" id="moveBox">Move to in To Do</a></li>
+                                <li><a href="#" id="moveProgress">Move to in Progress</a></li>
+                        </div>
+                </div>
+                <p>Cursus purus, diam, aliquet <span class="subtext"></span> scelerisque dignissim tellus<span class="subtext"></span> aenean viverra. In risus elit vel id<span class="subtext"></span> tincidunt vel. Nunc ac ipsum.</p>
+
+                <div class="group">
+                    <div class="avatar">
+                        <a href="#"><img src="assets/imgg/Avatar.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (1).png" alt=""></a>
+                        <p>+7</p>
+                    </div>  
+
+                    <div class="label">
+                        <a href="#"><img src="assets/imgg/tik.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="toDo">
+                <div class="toDoHeader">
+                    <h3>Lookscout</h3>
+                    <a href="#" id="menu-trigger"><img src="assets/imgg/dot menu.svg" alt=""></a>
+
+                        <div id="menu-options" style="display: none;">
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><a href="#" id="delete">Delete</a></li>
+                                <li><a href="#" id="moveBox">Move to in To Do</a></li>
+                                <li><a href="#" id="moveProgress">Move to in Progress</a></li>
+                        </div>
+                </div>
+                <a href="#" class="pic"><img src="assets/imgg/img3.png" alt=""></a>
+                <p>Cursus purus, diam, aliquet <span class="subtext"></span> scelerisque dignis.</p>
+
+                <div class="group">
+                    <div class="avatar">
+                        <a href="#"><img src="assets/imgg/avatar 3.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (2).png" alt=""></a>
+                        <p>+7</p>
+                    </div>  
+
+                    <div class="label">
+                         <a href="#"><img id="myTime" src="assets/imgg/Lead Icon.svg" alt=""></a>
+                        <h5 id="saat"></h5>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="plus">
+                <a href="#"><img src="assets/imgg/plus 2.svg" alt="">Add</a>
+            </div>
+
+        </div>
+
+
+        <div class="new">
+            <h2>New Task</h2>
+            
+            <div class="plus">
+                <a href="#"><img src="assets/imgg/plus 2.svg" alt="">Add</a>
+            </div>
+                    
+        </div>
+        
+    </div> 
+
+
+    <div id="modal" class="modal">
+        <div id="scrollableContent">
+        <div class="modalContent">
+
+                <div class="modalHeader">
+                    <a href="#" id="addTodo"><img src="assets/imgg/check 2.svg" alt="">Done</a>
+                    <a href="#"><img src="assets/imgg/menu dot.svg" alt=""></a>
+                    <a href="#" id="closeModal"><img src="assets/imgg/X.svg" alt=""></a>
+                </div>
+                <h2>Lookscout - Design System Update</h2>
+                <h5>Added by Praesent Inent, 43 hours ago</h5>
+
+                <div class="group">
+                    <div class="avatar">
+                        <a href="#"><img src="assets/imgg/Avatar.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (1).png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/avatar 3.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar5.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar 6.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar (2).png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Avatar7.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/plus.svg" alt=""></a>
+                    </div>  
+                    <h3>Mo, 09 September 2022</h3>
+                </div>  
+
+                <div class="line"></div>
+
+                <div class="loadingBar">
+                    <div class="black"></div>
+                </div>
+
+                <div class="description">
+                    <a href="#"><img src="assets/imgg/align.svg" alt=""></a>
+                    <div class="descriptionFrame">
+                        <h2>Description</h2>
+                        <p>Fermentum sed pharetra posuere eget fringilla sagittis mauris aliquam. Sapien, id quam interdum <span class="subtext"></span> faucibus malesuada et. Magna a morbi nunc parturient tortor dignissim. Fringilla turpis eget<span class="subtext"></span> malesuada diam facilisi. Imperdiet habitasse etiam id netus egestas ac.</p> 
+                        <p>Et purus est tortor, potenti viverra tellus auctor faucibus tempus. Id orci ultrices massa turpis. Velit <span class="subtext"></span> iaculis rhoncus, morbi faucibus malesuada a in. Ornare id velit nam eu mattis ac aliquam mauris eget.<span class="subtext"></span> Arcu pellentesque pulvinar felis aliquet. Massa, quis pellentesque feugiat sed. Quisque dignissim et elit amet dui ut eros. Dictum quam at malesuada in.</p>  
+                        <a href="#">Show more</a>
+                    </div>
+
+
+                </div>
+            
+                <div class="article">
+
+                    <div class="artic">
+                        <a href="#"><img src="assets/imgg/check2.svg" alt="">Task List</a>
+                    </div>
+                    <div class="artic">
+                        <a href="#"><img src="assets/imgg/check3.svg" alt="">Facilisi praesent non convallis est eu elit.</a>
+                        <a href="#"><img src="assets/imgg/calander2.svg" alt="">Wednesday</a>
+                        <a href="#"><img src="assets/imgg/5.png" alt="">Ladarius</a>
+                        <a href="#"><img src="assets/imgg/6.png" alt="">Edwina</a>
+                    </div>
+                    <div class="artic">
+                        <a href="#"><img src="assets/imgg/check3.svg" alt="">Amet ornare augue turpis elit</a>
+                        <a href="#"><img src="assets/imgg/calander2.svg" alt="">Friday</a>
+                        <a href="#"><img src="assets/imgg/7.png" alt="">Baron</a>
+                        <a href="#"><img src="assets/imgg/8.png" alt="">Mariana</a>
+                    </div>
+                    <div class="artic">
+                        <a href="#"><img src="assets/imgg/check3.svg" alt="">Eget nisl libero quam arcu ultricies nulla.</a>
+                        <a href="#"><img src="assets/imgg/calander2.svg" alt="">Wednesday</a>
+                        <a href="#"><img src="assets/imgg/9.png" alt="">Darian</a>
+                    </div>
+                    <div class="artic">
+                        <a href="#"><img src="assets/imgg/check3.svg" alt="">Mi congue ac tellus urna risus imperdiet nunc.</a>
+                        <a href="#"><img src="assets/imgg/calander2.svg" alt="">Wednesday</a>
+                        <a href="#"><img src="assets/imgg/10.png" alt="">Asha</a>
+                    </div>
+                </div>
+
+                <div class="attachment">
+                    <a href="#"><img src="assets/imgg/link.svg" alt="">Attachment</a>
+                    <div class="content">
+                        <a href="#"><img src="assets/imgg/Content Placeholder2.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Content Placeholder3.png" alt=""></a>
+                        <a href="#"><img src="assets/imgg/Content Placeholder4.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="attachment">
+                    <a href="#"><img src="assets/imgg/message.svg" alt="">Comments (3)</a>
+                    <div class="contant">
+                        <a href="#"><img src="assets/imgg/last avatar.png" alt=""></a>
+                        <div class="brain">
+                            <h3>Brian Ford</h3>
+                            <p>Hello, can we talk about Lookscout - Design System?</p>
+                        </div>
+                    </div>
+                    <div class="clock">
+                        <p>08:00 PM</p>
+                    </div>
+                </div>
+                
+
+                <div class="input">
+                    <a href="#"><img src="assets/imgg/modal avatar.png" alt=""></a>
+
+                    <div class="footerDescription">
+                        <p id="metinKutusu">Write your comment here...</p>
+                        <div class="happy"></div>
+                        <a href="#"><img src="assets/imgg/happy.svg" alt=""></a>
+                        <a href="#"><img src="assets/imgg/2.svg" alt=""></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+      
+
+
+
+
+
+
+</body>
+</html>

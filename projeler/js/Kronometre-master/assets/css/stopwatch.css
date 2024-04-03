@@ -1,0 +1,63 @@
+/* Variables */
+:root {
+  --orange: #FFB000;
+  --grey: #f3f3f3;
+  --white: #fff;
+  --base-color: #FFB000;
+}
+
+/* Styles */
+body {
+  background-color: rgba(186, 186, 186, 0.118);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.wrapper {
+  width: 1200px; 
+  margin-top: 180px !important;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 60px; 
+  text-transform: uppercase;
+}
+
+#seconds,
+#tens {
+  font-size: 67.5px; 
+}
+
+button {
+  background-color: rgb(71, 130, 219);
+  color: var(--white);
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 28.5px; 
+  padding: 27px 15px; 
+  width: 270px; 
+  margin: 15px; 
+  outline: none;
+  text-shadow: 1px 1px 2px gray;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(9, 99, 233, 0.808);
+
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+ 

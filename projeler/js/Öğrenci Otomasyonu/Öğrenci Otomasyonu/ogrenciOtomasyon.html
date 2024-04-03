@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Otomasyonu</title>
+    <script src="ogrenciOtomasyon.js" defer></script>
+</head>
+<body>
+    <h2 style="color:rgb(17, 17, 225);">Öğrenci Listesi</h2>
+    <div id="students"></div>
+	<div class="student-card"></div>
+    <style>
+        .cool-button {
+          background-color: #09d41a; /* Yeşil bir renk seçin */
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          box-shadow: 4px 4px 4px rgba(17, 84, 255, 0.5);
+          margin-right: 15px;
+        }
+  
+        .cool-button:hover {
+          transform: scale(1.2);
+          transition: transform 0.3s ease;
+        }   
+      </style>
+
+   <button id="myBtn" onclick="addStudent()" class="cool-button">Öğrenci Ekle</button>
+   <button id="deleteAllBtn" class="cool-button">Tüm Öğrencileri Sil</button>
+   <button id="deleteOneBtn" class="cool-button">Öğrenci Sil</button><br><br>
+
+   <form id="filterForm">
+       <input type="text" id="filterInput" placeholder="Öğrenci adı girin">
+       <button type="button" id="filterButton" class="cool-button">Filtrele</button>
+       <button id="resetButton" class="cool-button">Sıfırla</button>
+   </form><br><br>
+
+    <table border="1" id="studentsTable" style="width:18%">
+        <tr>
+            <td style="color: rgb(17, 17, 225)"><strong>Id&nbsp;&nbsp;&nbsp;Ad&nbsp;&nbsp;&nbsp;
+                Soyad&nbsp;&nbsp;&nbsp;&nbsp;
+                Yaş&nbsp;&nbsp;&nbsp;
+                Cinsiyet</strong></td>
+        </tr>          
+        <tbody id="studentTable"></tbody>        
+    </table>
+</body>
+</html>
